@@ -12,4 +12,19 @@
 每条数据包含的字段：url、宽、高、tags数组
 
 */
+var cheerio = require('cheerio');
+var rp = require('request-promise');
+var options = {
+    uri: 'http://www.google.com',
+    transform: function (body) {
+        return cheerio.load(body);
+    }
+};
 
+rp(options)
+.then(function ($) {
+    // Process html like you would with jQuery...
+})
+.catch(function (err) {
+    // Crawling failed or Cheerio choked...
+});
