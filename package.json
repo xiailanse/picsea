@@ -1,0 +1,28 @@
+{
+  "name": "picsea",
+  "version": "1.0.0",
+  "description": "爬取以下60多个免费正版图片站的内容：",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Double-Lv/picsea.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Double-Lv/picsea/issues"
+  },
+  "homepage": "https://github.com/Double-Lv/picsea#readme",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "cheerio": "^0.22.0",
+    "express": "^4.15.2",
+    "mongoose": "^4.9.3",
+    "nodemon": "^1.11.0",
+    "request": "^2.81.0",
+    "request-promise": "^4.2.0"
+  }
+}
